@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1 id="level-title">Press Start to play</h1>
+  <button id="start-btn">Start</button>
+
+  <div class="info-container">
+    <div class="row">
+
+      <div class="tooltip">
+        <button id="howto-btn" class="info-btn">How To Play</button>
+        <span class="howto-info info"> A user must repeat the sequence of
+          flashing buttons by <br/>
+          [ clicking ] on buttons or using <br/>
+          [ w a s d ] or <br/> [ &#8593; &#8592; &#8595; &#8594; ]
+          on your keyboard. <br/> High-level, High-complexity !</span>
+      </div>
+
+      <div class="tooltip">
+            <button id="credit-btn" class="info-btn">Credit</button>
+            <span class="credit-info info">This is a challenge from
+              "The Complete 2021 Web Development Bootcamp" by Dr. Angela Yu from Udemy.
+              Made by Alli.</span>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- first row -->
+    <div class="row">
+
+      <div type="button" id="green" class="btn btn-single green">
+      </div>
+
+    </div>
+
+    <!-- Second row -->
+    <div class="row">
+
+      <div type="button" id="red" class="btn middle-btn red">
+      </div>
+
+      <div type="button" id="yellow" class="btn middle-btn yellow">
+      </div>
+
+    </div>
+
+    <!-- Last row -->
+    <div class="row">
+
+      <div type="button" id="blue" class="btn btn-single blue">
+      </div>
+
+    </div>
+
+  </div>
+  <!-- End of button part -->
+
+
+<!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+  <script src="game.js"async></script>
+</body>
+
+</html>
